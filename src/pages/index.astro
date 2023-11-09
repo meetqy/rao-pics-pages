@@ -8,6 +8,7 @@ import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import favIconSvg from '~/assets/favicons/favicon.svg';
 
 const metadata = {
   title: 'RaoPics — 远程访问 Eagle、Pixcall、Billfish 的素材库',
@@ -262,9 +263,9 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      <p class="flex justify-center items-center">
-        <img alt="rao.pics logo" src="/icon_512x512.png" class="w-20 h-20 shadow-lg rounded-full" />
-      </p>
+      <div class="flex justify-center">
+        <img src={favIconSvg.src} alt="logo" class="w-20 h-20" />
+      </div>
     </Fragment>
 
     <Fragment slot="subtitle">快速远程访问素材，还在等什么，赶紧下载体验吧 !</Fragment>
