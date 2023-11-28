@@ -4,23 +4,31 @@ export const headerData = {
   links: [
     {
       text: '首页',
-      href: getPermalink('/#'),
+      links: [
+        {
+          text: '功能',
+          href: getPermalink('/#features'),
+        },
+        {
+          text: '介绍',
+          href: getPermalink('/#introduces'),
+        },
+        {
+          text: '常见问题',
+          href: getPermalink('/#faqs'),
+        },
+      ],
     },
     {
-      text: '功能',
-      href: getPermalink('/#features'),
-    },
-    {
-      text: '介绍',
-      href: getPermalink('/#introduces'),
-    },
-    {
-      text: '常见问题',
-      href: getPermalink('/#faqs'),
+      text: 'Gallery 主题',
+      href: getPermalink('/about'),
     },
     {
       text: '其他版本',
-      links: [{ text: 'v0.7.x', href: 'https://v0.rao.pics' }],
+      links: [
+        { text: 'v0.7.x', href: 'https://v0.rao.pics' },
+        { text: 'Docker', href: 'https://github.com/rao-pics/docker' },
+      ],
     },
     // {
     // text: 'Homes',

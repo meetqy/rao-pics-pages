@@ -9,6 +9,7 @@ import Content from '~/components/widgets/Content.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import favIconSvg from '~/assets/favicons/favicon.svg';
+import Image from '~/components/common/Image.astro';
 
 const metadata = {
   title: 'RaoPics — 远程访问 Eagle、Pixcall、Billfish 的素材库',
@@ -208,6 +209,72 @@ const metadata = {
       alt: 'Steps image',
     }}
   />
+
+  <!-- Content Widget Gallery Default Theme **************** -->
+
+  <Content
+    id="gallery"
+    isReversed
+    title="Gallery 画廊"
+    tagline="官方默认主题"
+    items={[
+      { title: '树形结构菜单' },
+      { title: '高度还原 Eagle 文件夹结构' },
+      { title: '自适应 OR 瀑布流' },
+      { title: '可选择添加时间排序' },
+      { title: '支持和应用配色同步切换' },
+    ]}
+  >
+    <Fragment slot="image">
+      <Image
+        class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+        width={1366}
+        height={768}
+        widths={[683, 1366]}
+        sizes="(max-width: 1366px) 100vw, 1366px"
+        layout="cover"
+        src="/gallery/menu.png"
+        alt="gallery menu"
+      />
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      { title: '手机扫码，快速访问' },
+      { title: '多种展示方式' },
+      { title: '大图预览模式，可下载原图' },
+      { title: '大数据优化，无缝滚动，快速浏览' },
+    ]}
+  >
+    <Fragment slot="image">
+      <Image
+        class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"
+        width={1366}
+        height={768}
+        widths={[683, 1366]}
+        sizes="(max-width: 1366px) 100vw, 1366px"
+        layout="cover"
+        src="/gallery/phone.png"
+        alt="gallery phone device"
+      />
+    </Fragment>
+
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">移动端效果图</h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 
   <!-- FAQs Widget ******************* -->
 
