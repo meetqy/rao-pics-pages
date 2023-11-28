@@ -21,7 +21,7 @@ export const headerData = {
     },
     {
       text: 'Gallery 主题',
-      href: getPermalink('/about'),
+      href: getPermalink('#gallery'),
     },
     {
       text: '其他版本',
