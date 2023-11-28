@@ -14,6 +14,7 @@ import tasks from './src/utils/tasks';
 import { readingTimeRemarkPlugin } from './src/utils/frontmatter.mjs';
 
 import { ANALYTICS, SITE } from './src/utils/config.ts';
+import vercel from '@astrojs/vercel/serverless';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -30,6 +31,8 @@ export default defineConfig({
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
 
   output: 'static',
+
+  adapter: vercel({ webAnalytics: { enabled: true }, speedInsights: { enabled: true } }),
 
   integrations: [
     tailwind({
