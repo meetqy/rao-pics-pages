@@ -1,6 +1,6 @@
 ---
 publishDate: 2023-12-12
-title: 使用 RaoPics 在手机上访问 Eagle App 中的素材
+title: 使用 RaoPics 远程访问 Eagle App 中的素材
 category: 入门
 tags:
   - rao.pics
@@ -8,7 +8,7 @@ tags:
   - v1.0.0-alpha.11
 excerpt: 只需两步，快速远程访问 Eagle 中的素材。
 metadata:
-  canonical: https://rao.pics/shi3-yong4-raopics-zai4-shou3-ji1-shang4-fang3-wen4-eagleapp-zhong1-de-su4-cai2
+  canonical: https://rao.pics/shi3-yong4-raopics-yuan3-cheng2-fang3-wen4-eagleapp-zhong1-de-su4-cai2
 ---
 
 ## 第一步：下载应用程序并安装

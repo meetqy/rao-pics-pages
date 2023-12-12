@@ -182,7 +182,7 @@ export const footerData = {
   secondaryLinks: [],
   footNote: `
   <p>
-    <span>Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/meetqy"> meetqy</a> · All rights reserved.</span>
+    <span>Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/meetqy"> MEETQY</a> · All rights reserved.</span>
     <span>Thanks, <a target="_blank" href="https://github.com/onwidget/astrowind">astrowind</a>.</span>
     </p>
   `,
