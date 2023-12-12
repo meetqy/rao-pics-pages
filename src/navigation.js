@@ -1,4 +1,4 @@
-import { getPermalink } from './utils/permalinks';
+import { getPermalink, getBlogPermalink } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -23,13 +23,13 @@ export const headerData = {
       text: 'Gallery 主题',
       href: getPermalink('#gallery'),
     },
-    {
-      text: '其他版本',
-      links: [
-        { text: 'v0.7.x', href: 'https://v0.rao.pics' },
-        { text: 'Docker', href: 'https://github.com/rao-pics/docker' },
-      ],
-    },
+    // {
+    //   text: '其他版本',
+    //   links: [
+    //     { text: 'v0.7.x', href: 'https://v0.rao.pics' },
+    //     { text: 'Docker', href: 'https://github.com/rao-pics/docker' },
+    //   ],
+    // },
     // {
     // text: 'Homes',
     // links: [
@@ -113,31 +113,32 @@ export const headerData = {
     //     },
     //   ],
     // },
-    // {
-    //   text: 'Blog',
-    //   links: [
-    //     {
-    //       text: 'Blog List',
-    //       href: getBlogPermalink(),
-    //     },
-    //     {
-    //       text: 'Article',
-    //       href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
-    //     },
-    //     {
-    //       text: 'Article (with MDX)',
-    //       href: getPermalink('markdown-elements-demo-post', 'post'),
-    //     },
-    //     {
-    //       text: 'Category Page',
-    //       href: getPermalink('tutorials', 'category'),
-    //     },
-    //     {
-    //       text: 'Tag Page',
-    //       href: getPermalink('astro', 'tag'),
-    //     },
-    //   ],
-    // },
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
+      // links: [
+      //   {
+      //     text: 'Blog List',
+      //     href: getBlogPermalink(),
+      //   },
+      //   {
+      //     text: 'Article',
+      //     href: getPermalink('get-started-website-with-astro-tailwind-css', 'post'),
+      //   },
+      //   {
+      //     text: 'Article (with MDX)',
+      //     href: getPermalink('markdown-elements-demo-post', 'post'),
+      //   },
+      //   {
+      //     text: 'Category Page',
+      //     href: getPermalink('tutorials', 'category'),
+      //   },
+      //   {
+      //     text: 'Tag Page',
+      //     href: getPermalink('astro', 'tag'),
+      //   },
+      // ],
+    },
     // {
     //   text: 'Widgets',
     //   href: '#',
