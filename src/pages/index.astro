@@ -12,7 +12,7 @@ import favIconSvg from '~/assets/favicons/favicon.svg';
 import Image from '~/components/common/Image.astro';
 
 const metadata = {
-  title: 'RaoPics — 远程访问 Eagle、Pixcall、Billfish 的素材库',
+  title: 'RAO-PICS — 帮助你远程访问 Eagle 的素材库',
   ignoreTitleTemplate: true,
 };
 ---
@@ -36,7 +36,7 @@ const metadata = {
       <video autoplay loop controls src={'/hero.mp4'} class="mx-auto w-full rounded-lg bg-gray-500 shadow-lg"></video>
     </Fragment>
     <Fragment slot="title">
-      帮助你<span class="text-accent dark:text-white highlight">远程访问</span> Eagle、 Pixcall、Billfish 的素材资源
+      帮助你<span class="text-accent dark:text-white highlight">远程访问</span> Eagle App 的素材资源
     </Fragment>
   </Hero>
 
@@ -48,37 +48,39 @@ const metadata = {
 
   <Features
     id="features"
-    title="有哪些特色功能 ？"
-    subtitle="用最简单的方式，远程访问素材"
+    title="特色功能概览"
+    subtitle="RAO-PICS 拥有简单且便捷的特色功能，让您能以最简单的方式远程访问素材"
     items={[
       {
-        title: '30 多种配色',
-        description: '30 多种配色随意切换，还可以自定义主题，总有一款适合你',
+        title: '30 多种配色方案',
+        description: '提供 30 多种不同的配色方案供您自由选择，并且还可以自定义主题，让您总能找到适合您的款式。',
         icon: 'tabler:color-swatch',
       },
       {
         title: '快速同步',
-        description: '增量更新和实时同步，速度很快，无需等待',
+        description: '支持增量更新和实时同步，让您的更加快速的访问到素材，无需等待。',
         icon: 'tabler:brand-speedtest',
       },
       {
         title: '安全可靠',
-        description: '不会修改你的任何文件，通过读取生成索引，即使误操作，也不会对元数据造成任何伤害',
+        description:
+          'RaoPics不会修改您的任何文件，它通过生成索引的方式读取素材，即使发生误操作，也不会对您的元数据造成任何损害。',
         icon: 'tabler:brand-sentry',
       },
       {
         title: '简单易用',
-        description: '很简单，你只需要点点点，就可以在其他设备上查看素材',
+        description: '操作非常简单，您只需要进行几次点击，就能在其他设备上轻松查看素材。',
         icon: 'tabler:asterisk-simple',
       },
       {
         title: '多平台支持',
-        description: '同时支持手机、平板、PC',
+        description: 'RaoPics同时支持手机、平板和PC等多种平台，让您可以在不同设备上随时访问素材。',
         icon: 'tabler:device-desktop',
       },
       {
-        title: '无依赖',
-        description: '无需依赖管理软件，也能访问素材，甚至可以部署在 Windows/MacOS 服务器上',
+        title: '无依赖性',
+        description:
+          '您无需依赖于其他管理软件，即可访问您的素材。甚至可以将RaoPics部署在Windows/MacOS服务器上，实现更多的操作方式。',
         icon: 'tabler:album',
       },
     ]}
@@ -286,32 +288,34 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: '为什么只支持 Eagle ？',
+        title: '为什么只支持 Eagle？',
         description:
-          '目前还在测试版本，作者对 Eagle 相对熟悉一些，所以会优先支持 Eagle，核心内容完成之后，会跟进其他软件。',
+          '目前RaoPics仍处于测试版本，作者对Eagle相对更熟悉，因此选择了优先支持Eagle。一旦核心功能完成，作者将跟进其他软件，以扩大支持的范围。这意味着将来可能会支持更多的设计软件，以满足更广泛的用户需求。',
       },
       {
         title: '会支持选择修改吗 ？',
-        description: '不会，我们的定位很清晰，专注于远程访问这个方向，所有的功能也会围绕着它来设计和开发。',
+        description:
+          'RaoPics的定位非常清晰，专注于远程访问功能。因此，在当前的设计和开发中，并没有计划支持选择修改的功能。所有的功能都将围绕着远程访问展开，并为用户提供更便捷的使用体验。',
       },
       {
         title: '为什么不把重心放在 Docker 版本上 ？',
         description:
-          '我们的目标是「用最简单的方式，远程访问素材」很显然 Docker 不是最简单的方式。使用 Docker 需要一定的技术基础，这些都不是普通用户能接受的。所以，重心一定会是在 App 上，如果非常喜欢 Docker 版本，可以自己动手，或者等待社区的贡献，或使用 PicHome。',
+          '我们的目标是以最简单的方式实现远程访问素材的目标。考虑到技术基础的要求和广大普通用户的接受程度，我们认为 Docker 不是最简单的方式。因此，我们将重点放在开发适用于普通用户的应用程序上。如果您对 Docker 版本有特殊喜好，您可以自行尝试开发，或者等待社区的贡献，或者考虑使用类似的服务如PicHome。',
       },
       {
         title: '未来会收费吗 ？',
         description:
-          '对 Eagle App 的支持是免费的，并且会维护下去。其他软件的支持，会有收费版本。靠用爱发电的方式，去维护一款软件，会让软件陷入恶性循环。',
+          '目前对Eagle应用的支持是免费的，并将持续维护下去。然而，对其他软件的支持可能会有收费版本。这是为了确保软件的可持续发展，因为仅依靠无偿提供服务的方式，很难维持软件的正常运营并确保持续改进。',
       },
       {
         title: '会对我的素材造成影响吗 ？',
-        description: '不会，软件未对素材进行任何修改。并且以后也不会，只会读取提供远程访问所需数据。',
+        description:
+          '不会对您的素材造成任何影响。我们的软件不会对素材进行任何修改，也不会篡改其内容。它只会读取所需的数据以实现远程访问功能。您可以放心使用我们的软件来进行远程访问，而不必担心素材的安全性和完整性。',
       },
       {
         title: '能定制开发吗 ？',
         description:
-          '可以，不过收费会很贵，即使一个看起来简单的需求，可能也会比想象中的贵。请做好心里准备再与我联系，避免浪费彼此时间。',
+          '我们可以提供定制开发服务，但请注意，这可能会涉及较高的费用。即使是看似简单的需求，定制开发的成本可能超出预期。这是因为定制开发需要考虑到各种因素，包括需求分析、设计、编码、测试和部署等环节的工作量。',
       },
     ]}
   />
@@ -335,6 +339,6 @@ const metadata = {
       </div>
     </Fragment>
 
-    <Fragment slot="subtitle">快速远程访问素材，还在等什么，赶紧下载体验吧 !</Fragment>
+    <Fragment slot="subtitle">立即下载并开始享受快速远程访问素材的便利吧！</Fragment>
   </CallToAction>
 </Layout>
